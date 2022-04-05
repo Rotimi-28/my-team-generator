@@ -62,4 +62,4 @@ function templatBuilder(teams) {
     `
 }
  
-module.exports = templatBuilder 
+module.exports = templatBuilder; 
