@@ -5,13 +5,13 @@ const employeeCard = employeeArray => {
         return `
         <div class="card m-2 border-info employee-card" style="width: 18rem;">
         <div class="card-header text-white bg-info">
-           <h2 class="card-title">${employee.name}</h2>
-           <h3><i class="fas fas-mug-hot mr-2"></i>Manager</h3>
+           <h2 class="card-title">${employee.getname()}</h2>
+           <h3><i class="fas fas-mug-hot mr-2"></i>${employee.getRole()}</h3>
            <div>
               <div class="card-body">
                   <ul class="list-group">
-                      <li class="list-group-item">ID: 012</li>
-                      <li class="list-group-item">Email: <a href="mailto:kmata@gmail.com">kmata@gmail.co</a></li>
+                      <li class="list-group-item">ID: ${employee.getId()}</li>
+                      <li class="list-group-item">Email: <a href="mailto:${employee.getEmail()}</a></li>
                       <li class="list-group-item">Office nunmber: 0881</li>
                   </ul>
 
