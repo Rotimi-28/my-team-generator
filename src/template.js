@@ -1,18 +1,30 @@
+const Manager = require("../lib/Manager");
+
 const employeeCard = employeeArray => {
     return`
     <div class="team-area justify-content-center d-flex flex-wrap">
     ${employeeArray.map((employee)=> {
+        let li = ``;
+        if (employee.getRole() == "Manager") {
+            li = `<li class="list-group-item">Office nunmber: ${employee.getOfficeNumber()}</li>`
+
+        }else if (employee.getRole() == "Engineer") {
+            li = `<li class="list-group-item">github: <a href="https://github.com/${employee.getGitHub()}">${employee.getGitHub()}</a></li>`
+        
+        }else {li = `<li class="list-group-item">school: ${employee.getSchool()}</li>`}
+        
+        
         return `
         <div class="card m-2 border-info employee-card" style="width: 18rem;">
         <div class="card-header text-white bg-info">
-           <h2 class="card-title">${employee.getname()}</h2>
+           <h2 class="card-title">${employee.getName()}</h2>
            <h3><i class="fas fas-mug-hot mr-2"></i>${employee.getRole()}</h3>
            <div>
               <div class="card-body">
-                  <ul class="list-group">
+                  <ul class="list-group text-dark">
                       <li class="list-group-item">ID: ${employee.getId()}</li>
-                      <li class="list-group-item">Email: <a href="mailto:${employee.getEmail()}</a></li>
-                      <li class="list-group-item">Office nunmber: 0881</li>
+                      <li class="list-group-item">Email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()}</a></li>
+                      ${li}
                   </ul>
 
               </div> 
