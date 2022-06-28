@@ -42,5 +42,5 @@
 . require installing node js, inquirer, and jest
 
 # Authur
-. Rotimi Amao
+. #Rotimi Amao
 . Git repository my-team-generator
