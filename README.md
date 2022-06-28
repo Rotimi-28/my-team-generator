@@ -42,5 +42,7 @@
 . require installing node js, inquirer, and jest
 
 # Authur
-. #Rotimi Amao
-. Git repository my-team-generator
+.Rotimi Amao
+
+# Screen Shot
+![<img width="1440" alt="Screen Shot 2022-06-28 at 2 56 27 PM" src="https://user-images.githubusercontent.com/96090900/176316820-44ab79f5-3d72-40c5-a9e4-389f2605f109.png">
